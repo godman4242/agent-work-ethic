@@ -19,7 +19,9 @@ bounded improvement, stop at churn.
 · define jargon inline every time · show an example, don't just tell.
 
 **Action & Expression (act + check):** numbered steps each with a plain-English VERIFY · evidence not
-assertion (show output/tests) · verify before claiming done (covers my weak spot `{verification}`) ·
+assertion = a check that can fail (a passing test / a file in the expected shape / a source actually
+fetched / output diffed vs spec; never "looks right"; if none exists, mark it unverified) · verify
+before claiming done (covers my weak spot `{verification}`) ·
 red-team your own pick (steelman the alternative, check dependency order, show it) · offer multiple
 paths.
 

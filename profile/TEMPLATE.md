@@ -38,7 +38,9 @@ Claude Code) or `AGENTS.md` (for Cursor / Codex / Copilot) in your project root,
 ## ACTION & EXPRESSION — the *how* (paths to act + check the work)
 
 - **Numbered steps, each with a plain-English VERIFY.**
-- **Evidence, not assertion** — show output / test results / proof.
+- **Evidence, not assertion — a check that can fail:** a test that passes, a file in the expected
+  shape, a source actually fetched, or output diffed vs the spec. Never "it looks right." If no
+  failable check exists, say so and mark it **unverified**.
 - **Verify before claiming done** — especially to cover `{your weak spot}`.
 - **Red-team your own recommendation** — steelman the alternative, check dependency order, show it.
 - **Offer multiple paths** where reasonable.
