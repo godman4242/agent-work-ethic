@@ -190,9 +190,11 @@ because the product *is* low cognitive load, so "add everything" would betray it
   (openly UDL-designed, e.g. `adhd-friendly.md`).
 - **v3 (2026-07):** `SETUP-LEVELS.md` on-ramp (Levels 1–5) + `memory/` (Level 3 — file-based continuity
   across sessions, a convention the profile wires the agent to follow).
-- **Roadmap (still §6-disciplined):** a `.githooks/pre-commit` template (Level 4, "done = green"), a
-  `playbooks/` set (Level 5 — planning framework, lean kickoffs, nested `CLAUDE.md`, handoff), then a
-  one-command `install.sh` once those land. Each ships only when it's genuinely one page / one command.
+- **v4 (2026-07):** completed the ladder — `commit-gate/` (Level 4, "done = green" pre-commit template),
+  `playbooks/` (Level 5 — planning, feature-workflow, session-kickoff, handoff, nested-context), a
+  one-command `install.sh` (Levels 1–2, safe + idempotent, end-to-end tested against a throwaway HOME),
+  and two more archetypes (`beginner`, `senior-fast-shipper`). Each held to the one-page / one-command
+  bar. Playbooks were distilled from real process docs and **generalized** — no author/project specifics.
 
 ## 9. Sources
 

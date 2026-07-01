@@ -54,22 +54,25 @@ can't hand you — elite scaffolding instantly; judgment still grows with use).
 ```
 README.md                  ← you are here
 SETUP-LEVELS.md            ← the on-ramp: 5 optional levels to a top-tier setup
+install.sh                 ← one command: sets up Levels 1–2 globally (safe + idempotent)
 SPEC.md                    ← the design / build contract
 profile/
   reference.md             ← THE EXAMPLE: a complete, filled-in profile
   TEMPLATE.md              ← blank profile with the per-person slots marked
-  ready-made/              ← pre-tuned archetypes to use as-is (e.g. adhd-friendly.md)
+  ready-made/              ← pre-tuned archetypes: adhd-friendly · beginner · senior-fast-shipper
 generate-your-profile.md   ← THE INTERVIEW: 8 questions → your tuned profile
 memory/                    ← give the agent continuity across sessions (Level 3)
   README.md                ← how the file-based memory works + the one-paste wire-in
   MEMORY.md                ← the session-start index (starts empty)
   memory-file.template.md  ← copy to record one fact
+commit-gate/               ← "done = green": a pre-commit gate template (Level 4)
+playbooks/                 ← process habits: planning · feature-workflow · kickoff · handoff · nested-context (Level 5)
 hooks/
   ship-bar.sh              ← re-injects your standing rules every turn (enforcement)
   settings-snippet.json    ← the Claude Code settings block that wires the hook
   CLAUDE.md.template        ← profile as Claude Code instructions (drop-in)
   AGENTS.md.template        ← same profile in the cross-tool AGENTS.md format
-INSTALL.md                 ← 2-command global setup + per-project setup
+INSTALL.md                 ← manual setup (per-project + global); install.sh automates the global path
 ```
 
 ---

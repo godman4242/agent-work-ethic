@@ -38,25 +38,30 @@ into your profile so the agent reads and writes it.
 ## Level 4 — "Done = green" (commit gate) · +5 minutes *(coding projects)*
 **What:** a pre-commit hook that runs your build/test/lint and **blocks the commit on failure**, so
 "done" means *verified*, not *claimed*. (Skip if you're not writing code.)
-**Do:** *(shipping as a template next — see the roadmap below.)*
+**Do:** [`commit-gate/README.md`](commit-gate/README.md) — copy the template, set 3 commands, done.
 **You now get:** the agent can't tell you it's done when it's broken.
 
 ## Level 5 — Playbooks · ongoing
 **What:** the process habits that separate good from elite — a planning framework, lean session
 kickoffs, folder-local rules (nested `CLAUDE.md`), and a handoff routine so long work survives a
 context reset.
-**Do:** *(shipping as `playbooks/` next — see the roadmap below.)*
+**Do:** [`playbooks/README.md`](playbooks/README.md) — five one-page habits; adopt one at a time.
 
 ---
 
-## Roadmap (what's shipping into these levels)
-- **Level 4 template** — a portable `.githooks/pre-commit` (build → test → lint, with a docs-only
-  fast-path) + one line to install it.
-- **`playbooks/`** — planning framework, lean-kickoff template, nested-`CLAUDE.md` pattern, handoff/
-  `RESUME_HERE` discipline. Each a one-page, optional habit.
-- **One-command installer** — `install.sh` that sets up every level you choose, once the tiers above
-  land.
-- **More ready-made archetypes** — `beginner`, `senior-fast-shipper` alongside `adhd-friendly`.
+## Fastest path (Levels 1–2 in one command)
+```bash
+./install.sh                                   # installs profile/reference.md globally + the hook
+./install.sh profile/ready-made/adhd-friendly.md   # or start from an archetype
+```
+Safe and idempotent — it backs up anything it changes and never clobbers your existing `CLAUDE.md` /
+`settings.json`. Then add Levels 3–5 per project from the pointers above.
+
+## What's shipped
+All five levels + the archetypes are live: `SETUP-LEVELS.md` (this file), `hooks/` (L2),
+[`memory/`](memory/) (L3), [`commit-gate/`](commit-gate/) (L4), [`playbooks/`](playbooks/) (L5),
+[`install.sh`](install.sh), and the [`profile/ready-made/`](profile/ready-made/) archetypes
+(`adhd-friendly`, `beginner`, `senior-fast-shipper`).
 
 **Design rule for all of it:** every level is *optional* and *self-contained*. Adding a level must
 never make Level 1 harder to understand. Low cognitive load is the product, not a nice-to-have.

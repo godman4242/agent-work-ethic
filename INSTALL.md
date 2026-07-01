@@ -4,6 +4,11 @@ Two ways to use this: **per-project** (fastest) or **global** (applies to every 
 rules with a hook). Start with per-project; add the global hook when you want the rules *enforced*, not
 just advisory.
 
+> **Prefer one command?** `./install.sh` does the global setup (Section B) for you — profile + hook +
+> settings wiring, safe and idempotent (backs up anything it touches). The manual steps below are for
+> per-project setup, or if you'd rather wire it by hand. See also [`SETUP-LEVELS.md`](SETUP-LEVELS.md)
+> for the full climb (memory, commit gate, playbooks).
+
 First, make your profile: run [`generate-your-profile.md`](generate-your-profile.md), or copy
 [`profile/reference.md`](profile/reference.md) / [`profile/TEMPLATE.md`](profile/TEMPLATE.md) and edit
 the `{slots}`. Then pick a setup below.
