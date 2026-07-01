@@ -179,7 +179,22 @@ re-injects the profile's standing contract on every turn (modeled on the proven 
 
 ---
 
-## 8. Sources
+## 8. Evolution beyond v1 (tiered setup)
+
+v1 shipped the profile + interview + hook + drop-in templates. The kit then grew as **optional,
+self-contained levels** (see [`SETUP-LEVELS.md`](SETUP-LEVELS.md)) rather than a bigger monolith —
+because the product *is* low cognitive load, so "add everything" would betray it. The design rule:
+**each level must not make Level 1 harder to understand.**
+
+- **v2 (2026-07):** general-use reframe (coding *or* knowledge work) + `profile/ready-made/` archetypes
+  (openly UDL-designed, e.g. `adhd-friendly.md`).
+- **v3 (2026-07):** `SETUP-LEVELS.md` on-ramp (Levels 1–5) + `memory/` (Level 3 — file-based continuity
+  across sessions, a convention the profile wires the agent to follow).
+- **Roadmap (still §6-disciplined):** a `.githooks/pre-commit` template (Level 4, "done = green"), a
+  `playbooks/` set (Level 5 — planning framework, lean kickoffs, nested `CLAUDE.md`, handoff), then a
+  one-command `install.sh` once those land. Each ships only when it's genuinely one page / one command.
+
+## 9. Sources
 
 - CAST — UDL Guidelines 3.0 (released 2024-07-30): https://udlguidelines.cast.org/ and
   https://udlguidelines.cast.org/more/about-guidelines-3-0/

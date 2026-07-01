@@ -42,18 +42,28 @@ Pick one:
 Then make it stick: [`INSTALL.md`](INSTALL.md) wires a hook (a small script the agent runs every turn)
 so the rules are *enforced*, not just suggested.
 
+**Want the full, top-tier setup?** Follow [`SETUP-LEVELS.md`](SETUP-LEVELS.md) — five optional levels
+(profile → enforced → memory → commit-gate → playbooks) you climb one at a time. It gets your *setup*
+into the top few percent without drowning you on day one (and it's honest about what a repo can and
+can't hand you — elite scaffolding instantly; judgment still grows with use).
+
 ---
 
 ## What's inside
 
 ```
 README.md                  ← you are here
+SETUP-LEVELS.md            ← the on-ramp: 5 optional levels to a top-tier setup
 SPEC.md                    ← the design / build contract
 profile/
   reference.md             ← THE EXAMPLE: a complete, filled-in profile
   TEMPLATE.md              ← blank profile with the per-person slots marked
   ready-made/              ← pre-tuned archetypes to use as-is (e.g. adhd-friendly.md)
 generate-your-profile.md   ← THE INTERVIEW: 8 questions → your tuned profile
+memory/                    ← give the agent continuity across sessions (Level 3)
+  README.md                ← how the file-based memory works + the one-paste wire-in
+  MEMORY.md                ← the session-start index (starts empty)
+  memory-file.template.md  ← copy to record one fact
 hooks/
   ship-bar.sh              ← re-injects your standing rules every turn (enforcement)
   settings-snippet.json    ← the Claude Code settings block that wires the hook
