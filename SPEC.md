@@ -1,8 +1,9 @@
 # agent-work-ethic — v1 design spec
 
-> **One line:** A drop-in kit that gives any AI coding agent (Claude Code, Cursor, Codex) the work
-> ethic of a disciplined senior — and lets each person *tune it to themselves* — grounded in
-> **Universal Design for Learning (UDL)** so it serves the full range of human minds, not just one.
+> **One line:** A drop-in kit that gives any AI agent (Claude Code, Cursor, Codex) the work ethic of a
+> disciplined senior — for coding *or* general knowledge work — and lets each person *tune it to
+> themselves* — grounded in **Universal Design for Learning (UDL)** so it serves the full range of
+> human minds, not just one.
 
 Status: **design approved, not yet built.** This spec is the build contract for v1. The paste-ready
 kickoff lives in `RESUME_HERE.md`.
@@ -65,8 +66,11 @@ the low-cognitive-load principle it preaches.
 
 ## 3. The 7 work-ethic dimensions (the content)
 
-The profile encodes these *universal* principles. Personal specifics (a user's ADD, skill gaps,
-domain) are **blank tuning slots** the interview fills — they are NOT hard-coded.
+The profile encodes these *universal* principles. They are **domain-general** — they govern how the
+agent thinks, decides, and communicates, so they apply to coding *and* to general knowledge work
+(writing, research, planning, analysis). Personal specifics (a user's ADHD, skill gaps, domain) are
+**blank tuning slots** the interview fills — they are NOT hard-coded — though a ready-made archetype may
+pre-fill them as a convenient starting point (see `profile/ready-made/`).
 
 1. **Communication contract** — lead with the outcome; define jargon inline; numbered steps each with
    a plain-English VERIFY; upfront time estimates. *(UDL: Representation + Engagement)*
@@ -145,7 +149,10 @@ re-injects the profile's standing contract on every turn (modeled on the proven 
       step + a time estimate. If the work ethic doesn't change behavior, v1 failed.
 - [ ] `README.md` explains UDL in plain English (jargon defined), states the curb-cut framing, and
       the honest "agent applies UDL, it doesn't learn via UDL" note.
-- [ ] No personal/private content (ADD specifics, skill rubric, other repos) anywhere in the repo.
+- [ ] No *author-personal* content in the repo — no real name, private skill rubric, other project
+      names, or first-person medical disclosure. (Generalized, UDL-framed archetypes *designed around*
+      a trait — e.g. `profile/ready-made/adhd-friendly.md` — ARE welcome: they're shareable design
+      targets that help everyone, not personal disclosures. This is the 2026-07 policy update.)
 
 ---
 
@@ -161,7 +168,12 @@ re-injects the profile's standing contract on every turn (modeled on the proven 
 
 ## 7. Privacy & publishing
 
-- **Publish generalized principles only.** No ADD specifics, no skill rubric, no other project names.
+- **Publish generalized, shareable content only.** Ready-made archetypes *designed around* a trait
+  (e.g. `ready-made/adhd-friendly.md`) are fine and encouraged — framed via UDL as design targets that
+  raise the floor for everyone (curb-cut), written in the neutral second person, **not** as the
+  author's own disclosure. What still stays out: the author's real name, private skill rubric, other
+  project names, and any first-person "I have X" medical statement. (Policy updated 2026-07: earlier
+  drafts excluded ADD *entirely*; naming ADHD as an openly-designed-for audience is now in scope.)
 - Creating the GitHub remote + pushing (making it public + indexed) is a **deliberate decision**, not
   automated — once public it ties to the author's public identity and may be cached even if deleted.
 

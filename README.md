@@ -1,10 +1,12 @@
 # agent-work-ethic
 
-**Give any AI coding agent the work ethic of a disciplined senior — tuned to *you*.**
+**Give any AI agent the work ethic of a disciplined senior — tuned to *you*.**
 
 Drop this into any project and your agent (Claude Code, Cursor, Codex, Copilot) stops being an eager
-intern and starts working like a careful senior engineer: it leads with the answer, decides routine
+intern and starts working like a careful senior colleague: it leads with the answer, decides routine
 things itself and flags them, verifies before claiming "done," and tells you exactly what to do next.
+It works for **coding *and* general knowledge work** — writing, research, planning, analysis — because
+the discipline (outcome-first, decide-and-flag, verify, one clear next step) isn't code-specific.
 
 It's not a fixed set of rules you have to adopt. It's a small framework plus a 5-minute interview that
 generates **your own** profile — fitted to how *your* mind works.
@@ -30,6 +32,9 @@ Pick one:
 
 - **Use the example as-is** → copy [`profile/reference.md`](profile/reference.md) into your project as
   `CLAUDE.md` (or `AGENTS.md`). Instant disciplined agent.
+- **Start from a ready-made profile** → grab a pre-tuned archetype from
+  [`profile/ready-made/`](profile/ready-made/) — e.g. [`adhd-friendly.md`](profile/ready-made/adhd-friendly.md),
+  designed around ADHD working styles (and calmer for everyone — see the curb-cut note below).
 - **Make your own (recommended)** → open [`generate-your-profile.md`](generate-your-profile.md), paste
   the prompt into any agent, answer 8 short questions, get a finished profile back.
 - **Hand-edit** → fill in the blanks in [`profile/TEMPLATE.md`](profile/TEMPLATE.md).
@@ -47,6 +52,7 @@ SPEC.md                    ← the design / build contract
 profile/
   reference.md             ← THE EXAMPLE: a complete, filled-in profile
   TEMPLATE.md              ← blank profile with the per-person slots marked
+  ready-made/              ← pre-tuned archetypes to use as-is (e.g. adhd-friendly.md)
 generate-your-profile.md   ← THE INTERVIEW: 8 questions → your tuned profile
 hooks/
   ship-bar.sh              ← re-injects your standing rules every turn (enforcement)
@@ -91,7 +97,9 @@ elsewhere.
 
 ## Does it actually work? (illustrative)
 
-Same trivial request, agent **without** vs **with** the profile:
+Same trivial request, agent **without** vs **with** the profile.
+
+**Coding:**
 
 > **You:** "rename `foo` to `bar` in utils.js"
 >
@@ -99,6 +107,16 @@ Same trivial request, agent **without** vs **with** the profile:
 >
 > **With:** *"Done — renamed in 2 spots (~1 min). **Next:** 1) run `npm test` — VERIFY: suite stays
 > green. I checked there were no other `foo` references first (grep returned 2, both updated)."*
+
+**General knowledge work (no code):**
+
+> **You:** "summarize this report for my boss"
+>
+> **Without:** *"Here's a summary: [six dense paragraphs]."*
+>
+> **With:** *"Bottom line: the pilot hit its target, cost ran 12% over (~2 min read below). I pulled
+> every number straight from the report, not memory. **Next:** 1) skim the 3 bolded figures — VERIFY
+> they match what your boss already expects; if not, tell me and I'll dig into that one."*
 
 The difference is the work ethic: outcome first, evidence, a concrete next step with a way to confirm
 it. Run the real test yourself — paste a profile into a fresh session and try a small task.

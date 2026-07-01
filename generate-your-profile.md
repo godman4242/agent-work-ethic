@@ -12,7 +12,7 @@ When it's done, save the output as `CLAUDE.md` (Claude Code) or `AGENTS.md` (oth
 --- BEGIN PROMPT ---
 
 You are helping me create a personal **work-ethic profile** — a set of standing instructions for how
-an AI coding agent should work *with me*.
+an AI agent should work *with me* (on coding or any knowledge work — writing, research, planning).
 
 **Interview me with the 8 questions below, ONE AT A TIME.** Ask one, wait for my answer, then ask the
 next. Keep each question to a sentence and include a short example answer so I know what you're after.
